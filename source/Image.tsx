@@ -7,7 +7,7 @@ const image = () => {
         <View>
             <Image
             source={Picture}
-            style={{width:200,height:200}}
+            style={{width:400,height:200,padding:200}}
             />
             {/* <Image
              source={{https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.1800flowers.com%2Farticles%2Fflower-facts%2Fmost-beautiful-flowers&psig=AOvVaw0MgFQZJ6F0urqsmYUNIZOW&ust=1748065254274000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCZrNXwuI0DFQAAAAAdAAAAABAE}}}
