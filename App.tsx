@@ -7,14 +7,20 @@ import React from 'react'
 //import Button from './source/Button';
 //import Login from './source/Login';
 //import Useref from './source/Useref';
-//import useCounterReducer from './source/useCounterReducer';
-import Usememo from './source/Usememo';
-
+//import UseCounterReducer from './source/useCounterReducer';
+//import Usememo from './source/Usememo';
+//simport Dashboard from './source/Dashboard';
+const Stack=createNativeStackNavigator();
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import Loginscreen from './source/Loginscreen';
 const App = () => {
   return (
-    <View>
-      <Usememo/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Home'>
+        <Stack.Screen name="Home" component={Loginscreen}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 export default App;
