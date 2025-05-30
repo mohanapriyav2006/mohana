@@ -6,8 +6,8 @@ const Loginscreen=({navigation})=>{
     const [error,setError]=useState('');
 
     const handlelogin=()=>{
-        if(username==='user'&& password==='1234'){
-            navigation.navigate('page1');
+        if(username==='mona'&& password==='priyav'){
+            navigation.navigate('page2');
         }else{
             setError('Invalid credentials');
         }

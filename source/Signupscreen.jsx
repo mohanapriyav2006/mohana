@@ -1,20 +1,20 @@
 import { StyleSheet, Text, View, TextInput,Button,Alert } from 'react-native'
 import React,{useState,} from 'react'
-const login=()=>{
-    const [name,setName]=useState('')
+const Signupscreen=({navigation})=>{
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
-    const handlelogin=()=>{
-        if(email==='mohanapriyav2006@gmail.com'&&password==='priyav2006'){
-            Alert.alert('Login Successful');
+    const handlesignup=()=>{
+        if( email==='mohana'&&password==='priyav'){
+            navigation.navigate('page1');
         }
         else{
             Alert.alert('Invalid credentials');
         }
     };
+   
     return(
         <View style={styles.container}>
-            <Text style={styles.title}>Login Form</Text>
+            <Text style={styles.title}>Signup Form</Text>
             <TextInput style={styles.input}
             placeholder="Email"
             value={email}
@@ -28,10 +28,10 @@ const login=()=>{
             onChangeText={setPassword}
             secureTextEntry
             />
-            <Button title="Login" onPress={handlelogin}/>
+            <Button title="Signup" onPress={handlesignup}/>
         </View>
-    )
-}
+    );
+};
 
 const styles = StyleSheet.create ({
     container:{
@@ -51,7 +51,7 @@ const styles = StyleSheet.create ({
          borderRadius:7,
     },
 });
-export default login;
+export default Signupscreen;
 
     
 

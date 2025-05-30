@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Picture from './asset/flower.webp';
+import Picture from './asset/idimg.jpg';
 
 const image = () => {
     return (
@@ -10,11 +10,11 @@ const image = () => {
             style={{width:400,height:200,padding:200}}
             />
             {/* <Image
-             source={{https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.1800flowers.com%2Farticles%2Fflower-facts%2Fmost-beautiful-flowers&psig=AOvVaw0MgFQZJ6F0urqsmYUNIZOW&ust=1748065254274000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCZrNXwuI0DFQAAAAAdAAAAABAE}}}
+             source={{https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2F719590846709820992%2F&psig=AOvVaw0D8ICeg1jr4GWn_R1hcDq7&ust=1748595992405000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPD9k-qpyI0DFQAAAAAdAAAAABAE}}}
              style={{width:100,height:100}}
              /> */}
              <Image
-               source={require('./asset/flower.webp')}
+               source={require('./asset/idimg.jpg')}
                style={{width:100,height:100}}
                />
              </View>

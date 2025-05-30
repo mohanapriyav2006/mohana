@@ -15,5 +15,4 @@ export default function Counter() {
             <Button title="Reset" onPress={reset} />
         </View>
     );
-        
-    }
+};
